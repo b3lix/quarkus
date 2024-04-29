@@ -1,0 +1,14 @@
+quarkus:
+  otel:
+    traces:
+      suppress-non-application-uris: true
+  management:
+    enabled: true
+  opentelemetry:
+    tracer:
+      exporter:
+        gcp:
+          enabled: false
+          project-id: "my-project-id"
+        otlp:
+          enabled: true
